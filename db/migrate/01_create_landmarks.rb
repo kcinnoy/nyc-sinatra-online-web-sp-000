@@ -1,5 +1,5 @@
 class CreateLandmarks < ActiveRecord::Migration
-  rdef change
+  def change
     create_table :landmarks do |t|
       t.string :name
       t.integer :figure_id
