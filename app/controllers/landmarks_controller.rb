@@ -1,5 +1,4 @@
 class LandmarksController < ApplicationController
-  class LandmarksController < ApplicationController
   get '/landmarks' do
     @landmarks = Landmark.all
     erb :'/landmarks/index'
@@ -29,5 +28,4 @@ class LandmarksController < ApplicationController
     @landmark.update(params[:landmark])
     redirect "/landmarks/#{@landmark.id}"
   end
-end
 end
