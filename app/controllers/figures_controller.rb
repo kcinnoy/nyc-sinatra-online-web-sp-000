@@ -1,4 +1,3 @@
-class FiguresController < ApplicationController
   class FiguresController < ApplicationController
     get '/figures' do
       @figures = Figure.all
@@ -36,5 +35,5 @@ class FiguresController < ApplicationController
       @figure.landmarks << Landmark.find_or_create(name: params[:landmark][:name])
       redirect "/figures/#{@figure.id}"
     end
-  end
 end
+
