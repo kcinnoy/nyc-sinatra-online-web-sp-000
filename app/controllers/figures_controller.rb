@@ -36,4 +36,3 @@
       redirect "/figures/#{@figure.id}"
     end
 end
-
